@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "clang",
+            "args": [
+                "src/main.cpp",
+                "-o",
+                "MiniGamesDemo.exe",
+                "-luser32",
+                "-lkernel32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
